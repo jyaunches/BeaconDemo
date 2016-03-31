@@ -7,19 +7,55 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
+    
+    let locationManager = CLLocationManager()
+    var beaconRegion: CLBeaconRegion?
 
+    @IBOutlet weak var proximityLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
+
+        let foo = NSUUID(UUIDString: "E20A39F4-73F5-4BC4-A12F-17D1AD07A961")
+        
+        self.beaconRegion = CLBeaconRegion(proximityUUID: foo!,
+            major: 0,
+            minor: 0,
+            identifier: "raspberrypi")
+    }
+    
+    @IBAction func stop(sender: AnyObject) {
+        locationManager.stopMonitoringForRegion(self.beaconRegion!)
+        locationManager.stopRangingBeaconsInRegion(self.beaconRegion!)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func start(sender: AnyObject) {
+        locationManager.startMonitoringForRegion(self.beaconRegion!)
+        locationManager.startRangingBeaconsInRegion(self.beaconRegion!)
     }
+}
 
+extension ViewController: CLLocationManagerDelegate {
+    func locationManager(manager: CLLocationManager, monitoringDidFailForRegion region: CLRegion?, withError error: NSError) {
+        print("Failed monitoring region: \(error.description)")
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Location manager failed: \(error.description)")
+    }
+    
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
 
+            for beacon in beacons {
+                self.proximityLabel.text = "\(beacon.proximity.rawValue)"
+            }
+        
+    }
 }
 
