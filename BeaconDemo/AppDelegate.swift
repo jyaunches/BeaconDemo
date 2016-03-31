@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let locationManager = CLLocationManager()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let notificationType:UIUserNotificationType = UIUserNotificationType.Alert
+        let notificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+        
+        locationManager.delegate = self
         return true
     }
 
@@ -40,7 +48,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        let notification = UILocalNotification()
+        notification.alertBody = "You've left range!"
+        notification.soundName = "Default"
+        UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+    }
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        let notification = UILocalNotification()
+        notification.alertBody = "You've entered range!"
+        notification.soundName = "Default"
+        UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+        
+    }
 }
 

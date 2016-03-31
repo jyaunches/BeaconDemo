@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     let locationManager = CLLocationManager()
     var beaconRegion: CLBeaconRegion?
 
+    @IBOutlet weak var inRangeLabel: UILabel!
     @IBOutlet weak var proximityLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,5 +58,14 @@ extension ViewController: CLLocationManagerDelegate {
             }
         
     }
+    
+    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        self.inRangeLabel.text = "Left range"
+    }
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        self.inRangeLabel.text = "In range"        
+    }
+
 }
 
