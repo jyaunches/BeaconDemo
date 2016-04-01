@@ -1,0 +1,13 @@
+PODS:
+  - JiffyLogger (1.0.1):
+    - ObjectiveSugar
+  - ObjectiveSugar (1.1.0)
+
+DEPENDENCIES:
+  - JiffyLogger
+
+SPEC CHECKSUMS:
+  JiffyLogger: e8284c9757d6db25140729cd124f52d1f4342169
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+
+COCOAPODS: 0.38.2

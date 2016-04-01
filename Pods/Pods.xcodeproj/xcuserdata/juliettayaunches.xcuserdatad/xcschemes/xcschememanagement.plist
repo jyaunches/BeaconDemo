@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JiffyLogger-JiffyLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JiffyLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectiveSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>24B4E3EDFF0A3096039FAC590D4A2376</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43F391B733E183D707BCCD2BF2529D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>665D7D9567C78E10B6A7F1710B70B9AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>805EE2442964512FD6B6624286D79CD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

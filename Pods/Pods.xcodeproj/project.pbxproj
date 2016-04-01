@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0164AC0D499204EEB673BA5C56F84568 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE099B5836D633875250CA2CA82DE867 /* NSArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0300BECEBBCC5ED2A0A12919A77E4BA9 /* JiffyLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CE0D532170D8BFA54939641E036C32 /* JiffyLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		034A362BBE5E6A18FD738BBF3609D8BB /* NSNumber+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA5541969C0242326CA5EAFC004A0FC /* NSNumber+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E70690289F04F2DBFEA1AAB93F08139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA266880A8791E16BD0DAA8C3469D7A8 /* Foundation.framework */; };
+		10F864946504F41263F03C3F224E0395 /* JFFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFB407A0F6139A86885DC49BA939531 /* JFFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1997209339B40B701DCF06BD70DF8F98 /* NSDate+JFLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = FC805E6E327D6ABB3E14407463775B26 /* NSDate+JFLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BEE7BC9C9FD487F04879A1AEA400FF7 /* JFLogsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E036C089F35ACEA4DB955A990C9E4096 /* JFLogsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		237DA275ACCB754A524AEC9179CF1CFE /* ObjectiveSugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D219EFF171B42D5883A9587245F3F /* ObjectiveSugar-dummy.m */; };
+		31C810ABE2634FEBE365E225CFAE0B9E /* ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8233604490F2A996280ED5B0F62770A6 /* ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BED0D3A930A0896A2B70DA319835F38 /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E46DB99DFC87CEB798A56D9890DA6 /* NSSet+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3C0DF277223DE8BF713AF9509A1F58FC /* JFLogExportProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FD557017EB086CF5571825BC6854E92A /* JFLogExportProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E65F31FDFCD087C5673E23B28D66AD8 /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB6CDB0343A0647A9B5526B92903501 /* NSDictionary+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		44AD23A3875096FF884843F75DE1C667 /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC16B277AE5B974D91BF256A68CDE9 /* NSMutableArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4DCD60628593CFBD0F3EF4EA6D3E5CB6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F63E6B324B8687E49C229DB26074F48 /* Pods-dummy.m */; };
+		57330F232A4287819EFBE72091D77ED1 /* NSArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = F018CE04A45348395AD84560249F43DE /* NSArray+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CCD4DF02E92AB321E663CC3314F721C /* NSString+JFStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = A12991EE9567412FE535A904D71AD878 /* NSString+JFStrings.m */; };
+		5F1E7576D71F315A391EE76213E96EBE /* NSDate+JFLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FA39424AA877215E36B87B3BFBBD35 /* NSDate+JFLogging.m */; };
+		60094C29935315A00D235CC11597E6F5 /* NSSet+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7D3BD384B563514365ED1DCAF769FA /* NSSet+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE00E248E33E753442D8486E8920570 /* JFFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F38478A9A4615F2CC7F21FAB1B696304 /* JFFileLogger.m */; };
+		8ACA5DA3A29ED4669E8471FA8655D3FE /* JFLoggingActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6293C928FA0F8F158EC05227F808CC1 /* JFLoggingActionManager.m */; };
+		97418EB599169143E5537B5B23B68240 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A6F4E2381D0C4CAF092B34ECEFDCEF /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FBE17B38B08BCAA4ADD7A3345764D37 /* JFEmailer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCE601F45BE4055D8D43BC001FAEC /* JFEmailer.m */; };
+		A34166E0513418EF1F591C54BF15723F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA266880A8791E16BD0DAA8C3469D7A8 /* Foundation.framework */; };
+		AD5F474DB1EC577457341C0E879B8F2C /* ObjectiveSugar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27685D5CCBBC3B54751DD514BAC9579C /* ObjectiveSugar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE4E32895D82093B6DBE84FC4B320831 /* JFLoggingActionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A5FDB231BC035C31AF0181564EA1E3 /* JFLoggingActionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE6F0EC6A44221A80EA0E85B94A5DA0 /* NSString+JFStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 840D11310D32917BFA0F12B6C52EB63D /* NSString+JFStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B59BCBD195528C6E0DA16C8F1A15D0A3 /* ObjectiveSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D29DF4C133B148999C0C8CE7518BFB /* ObjectiveSugar.framework */; };
+		C763625D3A89BF415C4817D254DF260E /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF5FE993B86F4058EB40530E59B36F /* NSNumber+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C7FF1F0C6F931BCC0153D3B4968AF5BD /* NSMutableArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9945D259A038C5424B8CB94E6C7CBC /* NSMutableArray+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1BC590931600AB0D606CD9D16B47543 /* JiffyLogger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B9604A74A4D5C8B728C193E24C0C406 /* JiffyLogger.bundle */; };
+		E02BB7AC9106445D2D7638BE4AEE6066 /* JFLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209C613A327D6F0E184B9F54F461BEF /* JFLogsViewController.m */; };
+		E51C83722EA5105EB5F4BCD287A9CF9C /* NSString+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B2837700D901538BDADFD7548CAB2C /* NSString+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E583F5D15D8792B758E57AB2B503E92C /* JiffyLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB03B09ADD9F3D5298D6B28085889C0 /* JiffyLogger-dummy.m */; };
+		EE794A6A7FF20D30B0B14B79AFBACF4C /* JFEmailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CC71EF7788D9EADF1436CFB2C6DA47 /* JFEmailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50739F138925539F44F53E69957BBA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA266880A8791E16BD0DAA8C3469D7A8 /* Foundation.framework */; };
+		F8A2F1309338491D4D96DA64611C7E46 /* NSDictionary+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 429EEDCDC4CD49272049481FF1A120AE /* NSDictionary+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3626CF424AE76B8F6C46463590FE55 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EC386B69F4EA6D32D4BD16E4C8C10 /* NSString+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0953E95FAF9C80D74365753EBDB0102B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665D7D9567C78E10B6A7F1710B70B9AA;
+			remoteInfo = ObjectiveSugar;
+		};
+		2B0C2B4954693953EB6C7ED654B5324B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F391B733E183D707BCCD2BF2529D19;
+			remoteInfo = JiffyLogger;
+		};
+		2B38478332C27009681831F36F87DDF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665D7D9567C78E10B6A7F1710B70B9AA;
+			remoteInfo = ObjectiveSugar;
+		};
+		D20CDA1861D81C4D1D84E597FD1BA6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24B4E3EDFF0A3096039FAC590D4A2376;
+			remoteInfo = "JiffyLogger-JiffyLogger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CE0D532170D8BFA54939641E036C32 /* JiffyLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JiffyLogger-umbrella.h"; sourceTree = "<group>"; };
+		0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JiffyLogger-Private.xcconfig"; sourceTree = "<group>"; };
+		1CFB407A0F6139A86885DC49BA939531 /* JFFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFFileLogger.h; path = Pod/Classes/JFFileLogger.h; sourceTree = "<group>"; };
+		2209C613A327D6F0E184B9F54F461BEF /* JFLogsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFLogsViewController.m; path = Pod/Classes/JFLogsViewController.m; sourceTree = "<group>"; };
+		27685D5CCBBC3B54751DD514BAC9579C /* ObjectiveSugar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveSugar-umbrella.h"; sourceTree = "<group>"; };
+		27CC71EF7788D9EADF1436CFB2C6DA47 /* JFEmailer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFEmailer.h; path = Pod/Classes/JFEmailer.h; sourceTree = "<group>"; };
+		2E14FBD32DF4C168E31863A7E7828086 /* ObjectiveSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F63E6B324B8687E49C229DB26074F48 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		3FA5541969C0242326CA5EAFC004A0FC /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ObjectiveSugar.h"; path = "Classes/NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		429EEDCDC4CD49272049481FF1A120AE /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ObjectiveSugar.h"; path = "Classes/NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		45E478A2D7570F50670282DB466C3E7C /* ObjectiveSugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectiveSugar.xcconfig; sourceTree = "<group>"; };
+		45FA39424AA877215E36B87B3BFBBD35 /* NSDate+JFLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+JFLogging.m"; path = "Pod/Classes/NSDate+JFLogging.m"; sourceTree = "<group>"; };
+		47406C09FB23533C785D91F104B20377 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7D3BD384B563514365ED1DCAF769FA /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+ObjectiveSugar.h"; path = "Classes/NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		5E9712605B89FCF1E2B4ED17E64BB50C /* JiffyLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JiffyLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F40F5381FCA61F972A0B8D665DA3BED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		659E46DB99DFC87CEB798A56D9890DA6 /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+ObjectiveSugar.m"; path = "Classes/NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		6A2D219EFF171B42D5883A9587245F3F /* ObjectiveSugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectiveSugar-dummy.m"; sourceTree = "<group>"; };
+		70A5FDB231BC035C31AF0181564EA1E3 /* JFLoggingActionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFLoggingActionManager.h; path = Pod/Classes/JFLoggingActionManager.h; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7B9604A74A4D5C8B728C193E24C0C406 /* JiffyLogger.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiffyLogger.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9EC386B69F4EA6D32D4BD16E4C8C10 /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ObjectiveSugar.m"; path = "Classes/NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		8233604490F2A996280ED5B0F62770A6 /* ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveSugar.h; path = Classes/ObjectiveSugar.h; sourceTree = "<group>"; };
+		840D11310D32917BFA0F12B6C52EB63D /* NSString+JFStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+JFStrings.h"; path = "Pod/Classes/NSString+JFStrings.h"; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D58E6F4C99A7ACBA227FE7F8F97CE5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEF5FE993B86F4058EB40530E59B36F /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+ObjectiveSugar.m"; path = "Classes/NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		96B2837700D901538BDADFD7548CAB2C /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ObjectiveSugar.h"; path = "Classes/NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		96D29DF4C133B148999C0C8CE7518BFB /* ObjectiveSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		974733436C79D4F647EABD106BBD17AE /* ObjectiveSugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveSugar-prefix.pch"; sourceTree = "<group>"; };
+		9FB03B09ADD9F3D5298D6B28085889C0 /* JiffyLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JiffyLogger-dummy.m"; sourceTree = "<group>"; };
+		A12991EE9567412FE535A904D71AD878 /* NSString+JFStrings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+JFStrings.m"; path = "Pod/Classes/NSString+JFStrings.m"; sourceTree = "<group>"; };
+		A6A6F4E2381D0C4CAF092B34ECEFDCEF /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		ADDC16B277AE5B974D91BF256A68CDE9 /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+ObjectiveSugar.m"; path = "Classes/NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		AE099B5836D633875250CA2CA82DE867 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ObjectiveSugar.m"; path = "Classes/NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		B397CDE72F8AA6D34BABF2A06AEED5C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		B6293C928FA0F8F158EC05227F808CC1 /* JFLoggingActionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFLoggingActionManager.m; path = Pod/Classes/JFLoggingActionManager.m; sourceTree = "<group>"; };
+		B6ACFB3AB4B51FB18D6FC4DC72CDCF2D /* JiffyLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JiffyLogger.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C204E7B76B8629B7D31AD55F234DBAE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		CB9945D259A038C5424B8CB94E6C7CBC /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+ObjectiveSugar.h"; path = "Classes/NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CFABFA7450882F88AD7C87BA1A2846AE /* ObjectiveSugar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ObjectiveSugar.modulemap; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D543A639449A54922C76D826228A7E7B /* ObjectiveSugar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ObjectiveSugar-Private.xcconfig"; sourceTree = "<group>"; };
+		DF5FCE601F45BE4055D8D43BC001FAEC /* JFEmailer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFEmailer.m; path = Pod/Classes/JFEmailer.m; sourceTree = "<group>"; };
+		E036C089F35ACEA4DB955A990C9E4096 /* JFLogsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFLogsViewController.h; path = Pod/Classes/JFLogsViewController.h; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB6CDB0343A0647A9B5526B92903501 /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ObjectiveSugar.m"; path = "Classes/NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		F018CE04A45348395AD84560249F43DE /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+ObjectiveSugar.h"; path = "Classes/NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		F38478A9A4615F2CC7F21FAB1B696304 /* JFFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFFileLogger.m; path = Pod/Classes/JFFileLogger.m; sourceTree = "<group>"; };
+		F5529E01F3F306C4F6A0EFCDA856D4A6 /* JiffyLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JiffyLogger.xcconfig; sourceTree = "<group>"; };
+		FA266880A8791E16BD0DAA8C3469D7A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FC805E6E327D6ABB3E14407463775B26 /* NSDate+JFLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+JFLogging.h"; path = "Pod/Classes/NSDate+JFLogging.h"; sourceTree = "<group>"; };
+		FD0DF697B57E83F627F5488F91560928 /* JiffyLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JiffyLogger-prefix.pch"; sourceTree = "<group>"; };
+		FD557017EB086CF5571825BC6854E92A /* JFLogExportProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFLogExportProtocol.h; path = Pod/Classes/JFLogExportProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ECB70A358142B0B5EA30A36E7148FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272756C1CDDD5F01F8B70E0D319DCA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34166E0513418EF1F591C54BF15723F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CEF33F08D405274F3DF50151A6701F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E70690289F04F2DBFEA1AAB93F08139 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85490A6FBC2FF6896554614A654548E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50739F138925539F44F53E69957BBA7 /* Foundation.framework in Frameworks */,
+				B59BCBD195528C6E0DA16C8F1A15D0A3 /* ObjectiveSugar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66EF2C5942BA7EF2A19BCA21C7CDA1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D29DF4C133B148999C0C8CE7518BFB /* ObjectiveSugar.framework */,
+				74691339DAD586D408BFBA7B300A595F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AE1DAEBEAE67D3F897EE43AB6648979 /* JiffyLogger */ = {
+			isa = PBXGroup;
+			children = (
+				27CC71EF7788D9EADF1436CFB2C6DA47 /* JFEmailer.h */,
+				DF5FCE601F45BE4055D8D43BC001FAEC /* JFEmailer.m */,
+				1CFB407A0F6139A86885DC49BA939531 /* JFFileLogger.h */,
+				F38478A9A4615F2CC7F21FAB1B696304 /* JFFileLogger.m */,
+				FD557017EB086CF5571825BC6854E92A /* JFLogExportProtocol.h */,
+				70A5FDB231BC035C31AF0181564EA1E3 /* JFLoggingActionManager.h */,
+				B6293C928FA0F8F158EC05227F808CC1 /* JFLoggingActionManager.m */,
+				E036C089F35ACEA4DB955A990C9E4096 /* JFLogsViewController.h */,
+				2209C613A327D6F0E184B9F54F461BEF /* JFLogsViewController.m */,
+				FC805E6E327D6ABB3E14407463775B26 /* NSDate+JFLogging.h */,
+				45FA39424AA877215E36B87B3BFBBD35 /* NSDate+JFLogging.m */,
+				840D11310D32917BFA0F12B6C52EB63D /* NSString+JFStrings.h */,
+				A12991EE9567412FE535A904D71AD878 /* NSString+JFStrings.m */,
+				E49ACC23A0D6451DBB789EDAFEB724C5 /* Support Files */,
+			);
+			path = JiffyLogger;
+			sourceTree = "<group>";
+		};
+		74691339DAD586D408BFBA7B300A595F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA266880A8791E16BD0DAA8C3469D7A8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				3F63E6B324B8687E49C229DB26074F48 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				A6A6F4E2381D0C4CAF092B34ECEFDCEF /* Pods-umbrella.h */,
+				C204E7B76B8629B7D31AD55F234DBAE1 /* Pods.debug.xcconfig */,
+				B397CDE72F8AA6D34BABF2A06AEED5C9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7891F457E90898BAEAF1DF00AFE97E84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D58E6F4C99A7ACBA227FE7F8F97CE5F /* Info.plist */,
+				CFABFA7450882F88AD7C87BA1A2846AE /* ObjectiveSugar.modulemap */,
+				45E478A2D7570F50670282DB466C3E7C /* ObjectiveSugar.xcconfig */,
+				D543A639449A54922C76D826228A7E7B /* ObjectiveSugar-Private.xcconfig */,
+				6A2D219EFF171B42D5883A9587245F3F /* ObjectiveSugar-dummy.m */,
+				974733436C79D4F647EABD106BBD17AE /* ObjectiveSugar-prefix.pch */,
+				27685D5CCBBC3B54751DD514BAC9579C /* ObjectiveSugar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectiveSugar";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				66EF2C5942BA7EF2A19BCA21C7CDA1DD /* Frameworks */,
+				FD701E63C8F8E0607F9755213107647A /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B9604A74A4D5C8B728C193E24C0C406 /* JiffyLogger.bundle */,
+				5E9712605B89FCF1E2B4ED17E64BB50C /* JiffyLogger.framework */,
+				2E14FBD32DF4C168E31863A7E7828086 /* ObjectiveSugar.framework */,
+				5F40F5381FCA61F972A0B8D665DA3BED /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E49ACC23A0D6451DBB789EDAFEB724C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47406C09FB23533C785D91F104B20377 /* Info.plist */,
+				B6ACFB3AB4B51FB18D6FC4DC72CDCF2D /* JiffyLogger.modulemap */,
+				F5529E01F3F306C4F6A0EFCDA856D4A6 /* JiffyLogger.xcconfig */,
+				0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */,
+				9FB03B09ADD9F3D5298D6B28085889C0 /* JiffyLogger-dummy.m */,
+				FD0DF697B57E83F627F5488F91560928 /* JiffyLogger-prefix.pch */,
+				06CE0D532170D8BFA54939641E036C32 /* JiffyLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JiffyLogger";
+			sourceTree = "<group>";
+		};
+		F8C1DF23086CD73D1A6493B08B55F650 /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				F018CE04A45348395AD84560249F43DE /* NSArray+ObjectiveSugar.h */,
+				AE099B5836D633875250CA2CA82DE867 /* NSArray+ObjectiveSugar.m */,
+				429EEDCDC4CD49272049481FF1A120AE /* NSDictionary+ObjectiveSugar.h */,
+				EFB6CDB0343A0647A9B5526B92903501 /* NSDictionary+ObjectiveSugar.m */,
+				CB9945D259A038C5424B8CB94E6C7CBC /* NSMutableArray+ObjectiveSugar.h */,
+				ADDC16B277AE5B974D91BF256A68CDE9 /* NSMutableArray+ObjectiveSugar.m */,
+				3FA5541969C0242326CA5EAFC004A0FC /* NSNumber+ObjectiveSugar.h */,
+				8FEF5FE993B86F4058EB40530E59B36F /* NSNumber+ObjectiveSugar.m */,
+				5C7D3BD384B563514365ED1DCAF769FA /* NSSet+ObjectiveSugar.h */,
+				659E46DB99DFC87CEB798A56D9890DA6 /* NSSet+ObjectiveSugar.m */,
+				96B2837700D901538BDADFD7548CAB2C /* NSString+ObjectiveSugar.h */,
+				7B9EC386B69F4EA6D32D4BD16E4C8C10 /* NSString+ObjectiveSugar.m */,
+				8233604490F2A996280ED5B0F62770A6 /* ObjectiveSugar.h */,
+				7891F457E90898BAEAF1DF00AFE97E84 /* Support Files */,
+			);
+			path = ObjectiveSugar;
+			sourceTree = "<group>";
+		};
+		FD701E63C8F8E0607F9755213107647A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AE1DAEBEAE67D3F897EE43AB6648979 /* JiffyLogger */,
+				F8C1DF23086CD73D1A6493B08B55F650 /* ObjectiveSugar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02BA7A42FDD065969118E4A2C203EBDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE794A6A7FF20D30B0B14B79AFBACF4C /* JFEmailer.h in Headers */,
+				10F864946504F41263F03C3F224E0395 /* JFFileLogger.h in Headers */,
+				3C0DF277223DE8BF713AF9509A1F58FC /* JFLogExportProtocol.h in Headers */,
+				AE4E32895D82093B6DBE84FC4B320831 /* JFLoggingActionManager.h in Headers */,
+				1BEE7BC9C9FD487F04879A1AEA400FF7 /* JFLogsViewController.h in Headers */,
+				0300BECEBBCC5ED2A0A12919A77E4BA9 /* JiffyLogger-umbrella.h in Headers */,
+				1997209339B40B701DCF06BD70DF8F98 /* NSDate+JFLogging.h in Headers */,
+				AEE6F0EC6A44221A80EA0E85B94A5DA0 /* NSString+JFStrings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420255801653B761C75C5BE63C50D822 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57330F232A4287819EFBE72091D77ED1 /* NSArray+ObjectiveSugar.h in Headers */,
+				F8A2F1309338491D4D96DA64611C7E46 /* NSDictionary+ObjectiveSugar.h in Headers */,
+				C7FF1F0C6F931BCC0153D3B4968AF5BD /* NSMutableArray+ObjectiveSugar.h in Headers */,
+				034A362BBE5E6A18FD738BBF3609D8BB /* NSNumber+ObjectiveSugar.h in Headers */,
+				60094C29935315A00D235CC11597E6F5 /* NSSet+ObjectiveSugar.h in Headers */,
+				E51C83722EA5105EB5F4BCD287A9CF9C /* NSString+ObjectiveSugar.h in Headers */,
+				AD5F474DB1EC577457341C0E879B8F2C /* ObjectiveSugar-umbrella.h in Headers */,
+				31C810ABE2634FEBE365E225CFAE0B9E /* ObjectiveSugar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BD1E8E3F78AED170B096FA1B87D2E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97418EB599169143E5537B5B23B68240 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24B4E3EDFF0A3096039FAC590D4A2376 /* JiffyLogger-JiffyLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C7133D914C9DFE1CF26CAF1F2A4BF31 /* Build configuration list for PBXNativeTarget "JiffyLogger-JiffyLogger" */;
+			buildPhases = (
+				73437EFAA4D518DA95C95A289B9A0B06 /* Sources */,
+				0ECB70A358142B0B5EA30A36E7148FDC /* Frameworks */,
+				DD785DE7D5ABC857C429725C30E4715E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JiffyLogger-JiffyLogger";
+			productName = "JiffyLogger-JiffyLogger";
+			productReference = 7B9604A74A4D5C8B728C193E24C0C406 /* JiffyLogger.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		43F391B733E183D707BCCD2BF2529D19 /* JiffyLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD771B0A27BC16DFBCDA8D2CC3FC4B61 /* Build configuration list for PBXNativeTarget "JiffyLogger" */;
+			buildPhases = (
+				74D4711E03AFD025B1099953AB33ECA9 /* Sources */,
+				D85490A6FBC2FF6896554614A654548E /* Frameworks */,
+				B5A71E6DC671532E74E2A47BFC908A84 /* Resources */,
+				02BA7A42FDD065969118E4A2C203EBDA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E186E886737BFCFDDD5E11A39FB4E252 /* PBXTargetDependency */,
+				4C1885AB9A928479430E327A332EB132 /* PBXTargetDependency */,
+			);
+			name = JiffyLogger;
+			productName = JiffyLogger;
+			productReference = 5E9712605B89FCF1E2B4ED17E64BB50C /* JiffyLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		665D7D9567C78E10B6A7F1710B70B9AA /* ObjectiveSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E282EFCBB67F0E0A2E7A4E607FBACA54 /* Build configuration list for PBXNativeTarget "ObjectiveSugar" */;
+			buildPhases = (
+				B1FC64F9D57A19587A7782FF2EE552A1 /* Sources */,
+				272756C1CDDD5F01F8B70E0D319DCA14 /* Frameworks */,
+				420255801653B761C75C5BE63C50D822 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveSugar;
+			productName = ObjectiveSugar;
+			productReference = 2E14FBD32DF4C168E31863A7E7828086 /* ObjectiveSugar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		805EE2442964512FD6B6624286D79CD3 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8DC91B9F193E6D32720BC067FEB051A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				2E884CFD00F5142CCCB2C8F072E47FA2 /* Sources */,
+				7CEF33F08D405274F3DF50151A6701F2 /* Frameworks */,
+				57BD1E8E3F78AED170B096FA1B87D2E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F8CBEBBDAD21DACE39B7BB81719229 /* PBXTargetDependency */,
+				FECABA50374E15499E5751A30916017D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 5F40F5381FCA61F972A0B8D665DA3BED /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43F391B733E183D707BCCD2BF2529D19 /* JiffyLogger */,
+				24B4E3EDFF0A3096039FAC590D4A2376 /* JiffyLogger-JiffyLogger */,
+				665D7D9567C78E10B6A7F1710B70B9AA /* ObjectiveSugar */,
+				805EE2442964512FD6B6624286D79CD3 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A71E6DC671532E74E2A47BFC908A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1BC590931600AB0D606CD9D16B47543 /* JiffyLogger.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD785DE7D5ABC857C429725C30E4715E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E884CFD00F5142CCCB2C8F072E47FA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCD60628593CFBD0F3EF4EA6D3E5CB6 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73437EFAA4D518DA95C95A289B9A0B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D4711E03AFD025B1099953AB33ECA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FBE17B38B08BCAA4ADD7A3345764D37 /* JFEmailer.m in Sources */,
+				6DE00E248E33E753442D8486E8920570 /* JFFileLogger.m in Sources */,
+				8ACA5DA3A29ED4669E8471FA8655D3FE /* JFLoggingActionManager.m in Sources */,
+				E02BB7AC9106445D2D7638BE4AEE6066 /* JFLogsViewController.m in Sources */,
+				E583F5D15D8792B758E57AB2B503E92C /* JiffyLogger-dummy.m in Sources */,
+				5F1E7576D71F315A391EE76213E96EBE /* NSDate+JFLogging.m in Sources */,
+				5CCD4DF02E92AB321E663CC3314F721C /* NSString+JFStrings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FC64F9D57A19587A7782FF2EE552A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0164AC0D499204EEB673BA5C56F84568 /* NSArray+ObjectiveSugar.m in Sources */,
+				3E65F31FDFCD087C5673E23B28D66AD8 /* NSDictionary+ObjectiveSugar.m in Sources */,
+				44AD23A3875096FF884843F75DE1C667 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				C763625D3A89BF415C4817D254DF260E /* NSNumber+ObjectiveSugar.m in Sources */,
+				3BED0D3A930A0896A2B70DA319835F38 /* NSSet+ObjectiveSugar.m in Sources */,
+				FA3626CF424AE76B8F6C46463590FE55 /* NSString+ObjectiveSugar.m in Sources */,
+				237DA275ACCB754A524AEC9179CF1CFE /* ObjectiveSugar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C1885AB9A928479430E327A332EB132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveSugar;
+			target = 665D7D9567C78E10B6A7F1710B70B9AA /* ObjectiveSugar */;
+			targetProxy = 0953E95FAF9C80D74365753EBDB0102B /* PBXContainerItemProxy */;
+		};
+		84F8CBEBBDAD21DACE39B7BB81719229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JiffyLogger;
+			target = 43F391B733E183D707BCCD2BF2529D19 /* JiffyLogger */;
+			targetProxy = 2B0C2B4954693953EB6C7ED654B5324B /* PBXContainerItemProxy */;
+		};
+		E186E886737BFCFDDD5E11A39FB4E252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JiffyLogger-JiffyLogger";
+			target = 24B4E3EDFF0A3096039FAC590D4A2376 /* JiffyLogger-JiffyLogger */;
+			targetProxy = D20CDA1861D81C4D1D84E597FD1BA6EE /* PBXContainerItemProxy */;
+		};
+		FECABA50374E15499E5751A30916017D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveSugar;
+			target = 665D7D9567C78E10B6A7F1710B70B9AA /* ObjectiveSugar */;
+			targetProxy = 2B38478332C27009681831F36F87DDF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0728A8556AFDD1284814B9F879D4262D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JiffyLogger/JiffyLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JiffyLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JiffyLogger/JiffyLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JiffyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22BFA9B85CA7498A10D337C2E3D41A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C204E7B76B8629B7D31AD55F234DBAE1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58497CAEF56426C4BBC49F34098DD287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JiffyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		67C7E92BEBC38A8105EDEF2BDD6140E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JiffyLogger/JiffyLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JiffyLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JiffyLogger/JiffyLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JiffyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7680BD43C5E324442DBE7E954FDFDC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D543A639449A54922C76D826228A7E7B /* ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveSugar/ObjectiveSugar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectiveSugar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectiveSugar/ObjectiveSugar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectiveSugar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7ED213D638FD278BA9F0A02EF5923785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B397CDE72F8AA6D34BABF2A06AEED5C9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F9CB8E5DB0F76A6081C33189D6060EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D543A639449A54922C76D826228A7E7B /* ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveSugar/ObjectiveSugar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectiveSugar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectiveSugar/ObjectiveSugar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectiveSugar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDFD801DBC8CA2D3C495E78C50E55438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE3BF167762BDBA3B30E68AD8B223B /* JiffyLogger-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JiffyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C7133D914C9DFE1CF26CAF1F2A4BF31 /* Build configuration list for PBXNativeTarget "JiffyLogger-JiffyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFD801DBC8CA2D3C495E78C50E55438 /* Debug */,
+				58497CAEF56426C4BBC49F34098DD287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8DC91B9F193E6D32720BC067FEB051A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BFA9B85CA7498A10D337C2E3D41A47 /* Debug */,
+				7ED213D638FD278BA9F0A02EF5923785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD771B0A27BC16DFBCDA8D2CC3FC4B61 /* Build configuration list for PBXNativeTarget "JiffyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0728A8556AFDD1284814B9F879D4262D /* Debug */,
+				67C7E92BEBC38A8105EDEF2BDD6140E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E282EFCBB67F0E0A2E7A4E607FBACA54 /* Build configuration list for PBXNativeTarget "ObjectiveSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7680BD43C5E324442DBE7E954FDFDC4A /* Debug */,
+				F9CB8E5DB0F76A6081C33189D6060EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

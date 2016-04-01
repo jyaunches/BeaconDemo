@@ -1,0 +1,1 @@
+../../../JiffyLogger/Pod/Classes/JFLoggingActionManager.h
