@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba02f517-37ab-403c-a521-b5b6cedf3d3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeaconDemo/BeaconDemo-Bridging-Header.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeaconDemo/BeaconLogger.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeaconDemo/BeaconLogger.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeaconDemo/BeaconLoggerVC.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BeaconDemo/BeaconLoggerVC.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BeaconDemo/Item.swift" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/BeaconDemo.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo/Base.lproj/LaunchScreen.storyboard" afterPath="$PROJECT_DIR$/BeaconDemo/Base.lproj/LaunchScreen.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo.xcworkspace/xcuserdata/juliettayaunches.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/BeaconDemo.xcworkspace/xcuserdata/juliettayaunches.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo.xcworkspace/xcuserdata/juliettayaunches.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/BeaconDemo.xcworkspace/xcuserdata/juliettayaunches.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/BeaconDemo/Base.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeaconDemo/ViewController.swift" afterPath="$PROJECT_DIR$/BeaconDemo/ViewController.swift" />
     </list>
@@ -35,8 +30,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BeaconDemo/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6885813">
-              <caret line="45" column="96" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.24740484">
+              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -293,8 +288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BeaconDemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6885813">
-          <caret line="45" column="96" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.24740484">
+          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
           <folding />
         </state>
       </provider>

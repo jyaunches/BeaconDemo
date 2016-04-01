@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var monitorButton: UIButton!
     let locationManager = CLLocationManager()
     var beaconRegion: CLBeaconRegion?
     var logger: BeaconLogger? {
@@ -47,11 +48,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stop(sender: AnyObject) {
+        self.monitorButton.setTitle("Start Monitoring", forState: UIControlState.Normal)
         locationManager.stopMonitoringForRegion(self.beaconRegion!)
         locationManager.stopRangingBeaconsInRegion(self.beaconRegion!)
     }
 
     @IBAction func start(sender: AnyObject) {
+        self.monitorButton.setTitle("Stop Monitoring", forState: UIControlState.Normal)
         locationManager.startMonitoringForRegion(self.beaconRegion!)
         locationManager.startRangingBeaconsInRegion(self.beaconRegion!)
     }
@@ -69,23 +72,27 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
         for beacon in beacons {
             if (self.proximity != beacon.proximity) {
-                self.proximity = beacon.proximity
-                switch(self.proximity) {
-                case CLProximity.Far:
+                switch(beacon.proximity.rawValue) {
+                case CLProximity.Far.rawValue:
+                    self.proximity = beacon.proximity
                     self.proximityLabel.text = "Far"
                     self.logger!.logMe("Proximity change: Far")
+                    self.inRangeLabel.text = "In range"
                     break
-                case CLProximity.Immediate:
+                case CLProximity.Immediate.rawValue:
+                    self.proximity = beacon.proximity
                     self.proximityLabel.text = "Immediate"
                     self.logger!.logMe("Proximity change: Immediate")
+                    self.inRangeLabel.text = "In range"
                     break
-                case CLProximity.Near:
+                case CLProximity.Near.rawValue:
+                    self.proximity = beacon.proximity
                     self.proximityLabel.text = "Near"
                     self.logger!.logMe("Proximity change: Near")
+                    self.inRangeLabel.text = "In range"
                     break
-                default:
-                    self.proximityLabel.text = "Unknown"
-                    self.logger!.logMe("Proximity change: Unknown")
+                default: break
+
 
                 }
                 self.loggerVC!.reloadData()
@@ -95,11 +102,12 @@ extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
         self.logger!.logMe("Have left beacon range")
-        self.inRangeLabel.text = "Left range"
+        self.inRangeLabel.text = "Out of range"
     }
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        self.inRangeLabel.text = "Have entered beacon range"
+        self.logger!.logMe("Have entered beacon range")
+        self.inRangeLabel.text = "In range"
     }
 
 }
